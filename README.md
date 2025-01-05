@@ -1,75 +1,149 @@
-# 🌐 Language Translator Application
+# Language Translator V3 🌍
 
-<div align="center">
+A robust web-based language translation application built with Spring Boot and modern web technologies.
 
-![Spring Boot](https://img.shields.io/badge/Spring_Boot-2.7.0-green.svg)
-![Java](https://img.shields.io/badge/Java-17-orange.svg)
-![HTML](https://img.shields.io/badge/HTML-59.8%25-red.svg)
-![JavaScript](https://img.shields.io/badge/JavaScript-18%25-yellow.svg)
-![Bootstrap](https://img.shields.io/badge/Bootstrap-5.0-purple.svg)
+## 🌟 Features
 
-A modern, secure, and user-friendly language translation application built with Spring Boot and powered by MyMemory Translation API.
+- Real-time text translation
+- Support for multiple languages including:
+  - English
+  - Spanish
+  - French
+  - German
+  - Hindi
+  - Japanese
+  - Korean
+  - Chinese
+- Secure user authentication
+- Responsive design
+- Intuitive user interface
+- Language swap functionality
+- Error handling with user feedback
 
-[Features](#-features) •
-[Tech Stack](#-tech-stack) •
-[Getting Started](#-getting-started) •
-[API Usage](#-api-usage) •
-[Live Demo](#-live-demo)
+## 🛠️ Technologies Used
 
-</div>
+- **Backend:**
+  - Java 17
+  - Spring Boot 3.x
+  - Spring Security
+  - Spring Data JPA
+  - H2 Database
 
-## ✨ Features
+- **Frontend:**
+  - HTML5
+  - Bootstrap 5
+  - JavaScript (Async/Await)
+  - Thymeleaf
 
-- **🔐 Secure Authentication System**
-  - User registration with validation
-  - Secure login functionality
-  - Password encryption
-  - Session management
+## 📋 Prerequisites
 
-- **🔄 Translation Capabilities**
-  - Support for multiple languages
-  - Real-time translation
-  - Both GET and POST request handling
-  - Error handling and recovery
-
-- **💻 User Interface**
-  - Clean, responsive design
-  - Bootstrap 5 styling
-  - Form validation
-  - Real-time feedback
-  - Mobile-friendly layout
-
-- **🛡️ Security Features**
-  - Spring Security integration
-  - Protected endpoints
-  - Secure password storage
-  - CSRF protection
-
-## 🔧 Tech Stack
-
-### Backend
-- **Framework:** Spring Boot 2.7.0
-- **Security:** Spring Security
-- **Database:** H2 Database
-- **ORM:** Spring Data JPA
-- **API Integration:** MyMemory Translation API
-
-### Frontend
-- **Template Engine:** Thymeleaf
-- **Styling:** Bootstrap 5
-- **Scripting:** JavaScript
-- **CSS:** Custom styling
-
-## 🚀 Getting Started
-
-### Prerequisites
-- Java 17 or higher
+- Java Development Kit (JDK) 17 or higher
 - Maven 3.6+
 - Git
 
-### Installation Steps
+## 🚀 Getting Started
 
-1. **Clone the Repository**
-   ```bash
-   git clone https://github.com/deepak2noob/Language_traslator_v2.git
-   cd Language_traslator_v2
+1. **Clone the repository**
+```bash
+git clone https://github.com/deepak2noob/language_translatorV3.git
+cd language_translatorV3
+```
+
+2. **Build the project**
+```bash
+mvn clean install
+```
+
+3. **Run the application**
+```bash
+mvn spring-boot:run
+```
+
+4. **Access the application**
+- Open your browser and navigate to `http://localhost:8080`
+- Default credentials:
+  - Username: `admin`
+  - Password: `admin123`
+
+## 💡 Usage
+
+1. Log in with your credentials
+2. Select source and target languages
+3. Enter text to translate
+4. Click the "Translate" button
+5. View the translated text in the result area
+
+## 🔒 Security Features
+
+- User authentication
+- Password encryption
+- Session management
+- CSRF protection
+- Secure form submission
+
+## 📁 Project Structure
+
+```
+language_translatorV3/
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   └── com/translator/
+│   │   │       ├── config/
+│   │   │       ├── controller/
+│   │   │       ├── dto/
+│   │   │       ├── model/
+│   │   │       ├── repository/
+│   │   │       └── service/
+│   │   └── resources/
+│   │       ├── static/
+│   │       └── templates/
+│   └── test/
+├── pom.xml
+└── README.md
+```
+
+## 🔧 Configuration
+
+The application can be configured through `application.properties`:
+
+```properties
+server.port=8080
+spring.h2.console.enabled=true
+spring.datasource.url=jdbc:h2:mem:translatordb
+```
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 🐛 Bug Reports
+
+If you discover any bugs, please create an issue in the GitHub repository with:
+- Detailed description of the bug
+- Steps to reproduce
+- Expected behavior
+- Screenshots (if applicable)
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## ✨ Author
+
+**Deepak** - [deepak2noob](https://github.com/deepak2noob)
+
+## 🙏 Acknowledgments
+
+- MyMemory Translation API for providing translation services
+- Spring Boot community for excellent documentation
+- Bootstrap team for responsive design components
+
+---
+⭐ Star this repository if you find it helpful!
+
+_Last updated: 2025-01-05_
